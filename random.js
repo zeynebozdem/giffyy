@@ -1,7 +1,6 @@
-var apikey = 'QyoA3LBnlBLHUTh8cipaaJ56jXbXJoB2';
 
-$(".random").click(function(){
-
+$(".randoms").click(function(){
+    var apikey = 'QyoA3LBnlBLHUTh8cipaaJ56jXbXJoB2';
     var xhr = $.get(`http://api.giphy.com/v1/gifs/random?&api_key=${apikey}&limit=1`);
 
     xhr.done(function (response) {
