@@ -31,3 +31,13 @@ body{
     color:#4C4B61;
     padding: 20px;
 }
+.categories button{
+    height: 60px; 
+    width: 130px;   
+    color: white;
+    background: linear-gradient(#EC6EAD,#3494E6);
+    margin:3px;
+    border-radius: 8px;
+    border:none;
+    font-size: 18px;
+}
