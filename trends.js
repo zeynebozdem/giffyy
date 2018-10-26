@@ -16,8 +16,14 @@ function trendingData(skip,take){
     xhr.done(function (response) {
         var array = response.data
         console.log("trending",array);
-        for (i in array) {
-            $(".datadiv").append(`<img src=${array[i].images.original.url} style='height=350px;'/>`);
+
+        for (i=0;i<array.length;i++) {
+          var divs=document.createElement("div");
+          $('.trends').append(divs);
+         
+
+       /* $("div").className=`trends-${i}`;
+            $(`.trends-${i}`).append(`<img src=${array[i].images.original.url} style='height=350px;'/>`);*/
             var totalcount = response.pagination.total_count
             $("p").text(` Trending aramasından ${totalcount} sonuç bulundu.`);
         }

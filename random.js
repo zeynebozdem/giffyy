@@ -7,8 +7,8 @@ $(".randoms").click(function(){
     console.log("random", response);
     var array = response.data
 
-    $(".datadiv").append(`<img src=${array.images.original.url} style='height=350px;'/>`)
+    $(".random").append(`<img src=${array.images.original.url} style='height=350px;'/>`)
 
 });
-$(".datadiv").empty();
+$(".random").empty();
 });
