@@ -9,14 +9,6 @@ var limit = 20;
 });*/
 
 trendingData(offset, limit);
-    $(window).on("scroll", function () {
-        var scrollHeight = $(document).height();
-        var scrollPosition = $(window).height() + $(window).scrollTop();
-        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-            offset += 20;
-            trendingData(offset, limit);
-        }
-    });
 
 
 function trendingData(skip, take) {

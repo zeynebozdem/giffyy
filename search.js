@@ -9,15 +9,7 @@ $("#searchbutton").click(function () {
 });
 
 
-$(window).on("scroll", function () {
-    var scrollHeight = $(document).height();
-    var scrollPosition = $(window).height() + $(window).scrollTop();
-    if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-        offset += 20;
-        var searchvalue = $(".searchbar").val();
-        searchData(offset, limit, searchvalue);
-    }
-});
+
 function searchData(skip, take, searchvalue) {
     var searchvalue = $(".searchbar").val();
     var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${searchvalue}&api_key=${apikey}&limit=${take}&offset=${skip}`);
@@ -25,7 +17,7 @@ function searchData(skip, take, searchvalue) {
         console.log("searchdata", response);
         var results = response.data
         for (i in results) {
-            $(".datadiv").append(`<img src=${results[i].images.fixed_width.url} style='height=200px;'/>`);
+            $(".datadiv").append(`<img src=${results[i].images.fixed_width.url} style='height:200px; width:200px;'/>`);
              }
 
     });

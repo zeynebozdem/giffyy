@@ -11,8 +11,11 @@ for(i=0;i<categories.length;i++){
 }
 
 function Results(){
-    alert(event.srcElement.className);
+    alert(event.srcElement.textContent);
+ 
 }
+
+
 
    /*$(`.${categories[i]}`).click(function(){
     console.log(categories[i]);
