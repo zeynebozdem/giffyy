@@ -2,7 +2,7 @@ var apikey = 'QyoA3LBnlBLHUTh8cipaaJ56jXbXJoB2';
 var limit = 20;
 var offset = 0;
 $("#searchbutton").click(function () {
-    $("#datadiv").empty();
+    $(".datadiv").empty();
     offset += 20;
     var searchvalue = $("#searchtext").val();
     searchData(offset, limit, searchvalue);

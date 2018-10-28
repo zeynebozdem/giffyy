@@ -3,13 +3,14 @@ $(window).on("scroll", function () {
     var scrollPosition = $(window).height() + $(window).scrollTop();
     if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
         offset += 20;
-        var searchvalue = $(".searchbar").val();
+       
         if(searchvalue!=''){
+            var searchvalue = $(".searchbar").val();
             searchData(offset, limit, searchvalue);
         }
         else{
-            trendingData(offset, limit);
 
+            categoryData(offset, limit, event.srcElement.textContent)
         }
     }
 });
