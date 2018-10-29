@@ -1,7 +1,7 @@
 var appendNumber = 4;
 var prependNumber = 1;
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 12,
+    slidesPerView: 10,
     centeredSlides: false,
     spaceBetween: 10,
     pagination: {

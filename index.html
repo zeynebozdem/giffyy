@@ -6,9 +6,11 @@
     <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <link rel="stylesheet" href="swiper.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/categories.css" type="text/css">
+    <link rel="stylesheet" href="swiper/swiper.css" type="text/css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
@@ -31,49 +33,58 @@
         </div>
         <div class="row">
             <div class="col col-md-12 text-center m-2">
-                <input class="searchbar" placeholder='search' type="text">
+                <input class="searchbar" placeholder='search &#xf002;' type="text"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-12 text-left m-2">
+                <p class="swiper-title">Reactions</p>
             </div>
         </div>
 
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="flex-container button">
-                    <div>
-                        <img src="assets/categories/agree.png">
-                    </div>
-                    <div>
-                        <p style="color: white;">trends</p>
+    
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex-container">
+                            <div class="category-image">
+                                <img src="assets/categories/trends.png">
+                            </div>
+                            <div class="category-title">
+                                <p>trends</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+     
+   
     <div class="container">
         <div class="row">
-            <div class="col col-md-12 dataname">
-                
+            <div class="col col-md-12 text-left data-title m-3">
+
             </div>
 
         </div>
         <div class="row">
-            <div class="col datadiv text-center">
+            <div class="col col-md-12 text-center data-gifs">
 
             </div>
         </div>
     </div>
 
 
-    <!-- <script src="random.js"></script>
-    <script src="trends.js"></script>-->
-    <script src="search.js"></script>
-    <script src="infinitescroll.js"></script>
-    <script src="swiper.js"></script>
-    <script src="categories.js"></script>
+    <!-- <script src="random.js"></script>-->
+    <script src="js/trends.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/infinitescroll.js"></script>
+    <script src="js/categories.js"></script>
+
+    <script src="swiper/swiper.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-    <script src="swiper.js"></script>
+    <script src="swiper/swiper.js"></script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

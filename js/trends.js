@@ -7,6 +7,10 @@ var limit = 20;
 
     trendingData(offset,limit);
 });*/
+$('.swiper-slide[0]').click(function () {
+    trendingData(offset, limit);
+
+});
 
 trendingData(offset, limit);
 
@@ -16,9 +20,11 @@ function trendingData(skip, take) {
     xhr.done(function (response) {
         var array = response.data
         console.log("trending", array);
+    $(".data-title").append(`<p>Trends Today</p>`);
+        
 
         for (i = 0; i < array.length; i++) {
-            $(".datadiv").append(`<img src=${array[i].images.fixed_width.url} style="height:200px;"/>`);
+            $(".data-gifs").append(`<img src=${array[i].images.fixed_width.url} style="height:200px;"/>`);
         }
 
     });

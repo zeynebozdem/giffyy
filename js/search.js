@@ -16,8 +16,11 @@ function searchData(skip, take, searchvalue) {
     xhr.done(function (response) {
         console.log("searchdata", response);
         var results = response.data
+        $(".data-title").empty();
+        $(".data-title").append(`<p>Explore ${searchvalue.charAt(0).toUpperCase()}${searchvalue.slice(1)} Gifs</p>`);
+
         for (i in results) {
-            $(".datadiv").append(`<img src=${results[i].images.fixed_width.url} style='height:200px; width:200px;'/>`);
+            $(".data-gifs").append(`<img src=${results[i].images.fixed_width.url} style='height:200px; width:200px;'/>`);
              }
 
     });
@@ -27,7 +30,7 @@ function searchData(skip, take, searchvalue) {
     if (e.keyCode == 13) {
         var searchvalue = $(".searchbar").val();
        
-        $(".datadiv").empty();
+        $(".data-gifs").empty();
         
         
         offset = 0;
