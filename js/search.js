@@ -1,6 +1,6 @@
-var apikey = 'QyoA3LBnlBLHUTh8cipaaJ56jXbXJoB2';
-var limit = 20;
+
 var offset = 0;
+var limit = 20;
 $("#searchbutton").click(function () {
     $(".datadiv").empty();
     offset += 20;
@@ -11,6 +11,7 @@ $("#searchbutton").click(function () {
 
 
 function searchData(skip, take, searchvalue) {
+    id=2;
     var searchvalue = $(".searchbar").val();
     var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${searchvalue}&api_key=${apikey}&limit=${take}&offset=${skip}`);
     xhr.done(function (response) {
@@ -21,19 +22,17 @@ function searchData(skip, take, searchvalue) {
 
         for (i in results) {
             $(".data-gifs").append(`<img src=${results[i].images.fixed_width.url} style='height:200px; width:200px;'/>`);
-             }
+        }
 
     });
 
 }
-    $(".searchbar").keyup(function (e) {
+$(".searchbar").keyup(function (e) {
     if (e.keyCode == 13) {
         var searchvalue = $(".searchbar").val();
-       
+
         $(".data-gifs").empty();
-        
-        
-        offset = 0;
+
         searchData(limit, offset, searchvalue);
 
     }
