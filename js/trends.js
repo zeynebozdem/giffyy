@@ -9,9 +9,8 @@ var limit = 20;
 $(".data-title").append(`<p>Trends Today</p>`);
 trendingData(offset, limit);
 
-$('.swiper-slide[0]').click(function () {
-    id=1;
-    trendingData(offset, limit);
+$('#trends').click(function () {
+   location.reload();
 
 });
 
@@ -24,7 +23,7 @@ function trendingData(skip, take) {
         var array = response.data
         console.log("trending", array);
         for (i = 0; i < array.length; i++) {
-            $(".data-gifs").append(`<img src=${array[i].images.fixed_width.url} style="height:200px;"/>`);
+            $(".data-gifs").append(`  <div class="col"><img src=${array[i].images.fixed_width.url} style="height:200px;"/><p style="color:white;</div>">${array[i].title}</p>`);
         }
 
     });
