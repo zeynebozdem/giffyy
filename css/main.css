@@ -5,9 +5,7 @@ body{
     
 }
 .logo{
-    font-family: 'Poppins', sans-serif;
-    color:white;
-    font-size: 40px;
+   width: 20%;
 }
 .searchbar{
     width: 587px;

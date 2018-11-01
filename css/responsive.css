@@ -1,0 +1,63 @@
+@media (min-width:320px)  { 
+    .searchbar{
+        width: 100%;
+        background-color: #313043;
+        border-radius: 8px;
+        border:none;
+        font-size:24px;
+        color:#4C4B61;
+        padding: 10px;
+    }
+    .logo{
+        width: 40%;
+     }
+    .swiper-slide {
+        font-size: 16px;
+        font-weight: 400;
+    }
+ }
+@media (min-width:481px)  { 
+    .searchbar{
+        width: 100%;
+        background-color: #313043;
+        border-radius: 8px;
+        border:none;
+        font-size:24px;
+        color:#4C4B61;
+        padding: 10px;
+    }
+    .logo{
+        width: 40%;
+     }
+
+}
+@media (min-width:641px)  { 
+    .searchbar{
+        width: 50%;
+    }
+    .logo{
+        width: 30%;
+     }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  {
+    .searchbar{
+        width: 50%;
+    }
+    .logo{
+        width: 30%;
+     } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) {
+    .searchbar{
+        width: 50%;
+    }
+    .logo{
+        width: 20%;
+     } /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) {
+    .searchbar{
+        width: 50%;
+    }
+    .logo{
+        width: 20%;
+     }
+
+    /* hi-res laptops and desktops */ }
