@@ -24,7 +24,7 @@ function trendingData(skip, take) {
         var array = response.data
         console.log("trending", array);
         for (i = 0; i < array.length; i++) {
-            $(".data-gifs").append(`<div class="card masonry-brick masonry-brick--h" ><img class="card-img-top" <img src=${array[i].images.fixed_width.url}><div class="card-body"><div class="row"><div class="col-md-6"> <p class="card-title text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><div class="col-md-6 text-right"> <img src="assets/share.png"></div></div></div></div>`);
+            $(".data-gifs").append(`<div class="card masonry-brick masonry-brick--h" style="background-color: #21202F; border-radius:16px;"><img class="card-img-top" <img src=${array[i].images.fixed_width.url}><div class="card-body"><div class="row"><div class="col-md-9 text-left"> <p class="card-title text-left">${array[i].title}</p></div><div class="col-md-3 text-right"><img style="width:28px; height:28px;" src="assets/shareicon.png"></div></div></div></div>`);
         }
 
     });
