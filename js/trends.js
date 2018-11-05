@@ -24,8 +24,10 @@ function trendingData(skip, take) {
         var array = response.data
         console.log("trending", array);
         for (i = 0; i < array.length; i++) {
-            $(".data-gifs").append(`  <div class="col"><img src=${array[i].images.fixed_width.url} style="height:200px;"/><p style="color:white;</div>">${array[i].title}</p>`);
+            $(".data-gifs").append(`<div class="card masonry-brick masonry-brick--h" ><img class="card-img-top" <img src=${array[i].images.fixed_width.url}><div class="card-body"><div class="row"><div class="col-md-6"> <p class="card-title text-left">Some quick example text to build on the card title and make up the bulk of the card's content.</p></div><div class="col-md-6 text-right"> <img src="assets/share.png"></div></div></div></div>`);
         }
 
     });
 }
+
+//<div class="col"><img src=${array[i].images.fixed_width.url} style="height:200px;"/><p style="color:white;</div>">${array[i].title}</p>
