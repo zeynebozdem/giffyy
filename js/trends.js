@@ -9,10 +9,11 @@ var limit = 20;
 $(".data-title").append(`<p>Trends Today</p>`);
 trendingData(offset, limit);
 
-$('#trends').click(function () {
-   location.reload();
-
+$('.trends').click(function () {
+  location.reload();
+  $('.trends').addClass('active');
 });
+
 
 
 

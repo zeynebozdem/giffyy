@@ -8,6 +8,8 @@ for(i=0;i<categories.length;i++){
    $('.swiper-wrapper').append(`<div class="swiper-slide"><div class="flex-container"><div class='category-image'><img src="assets/categories/${categoriesFileName[i]}.png"></div><div class='category-title'><p>${categories[i]}</p></div></div></div>`);
 }
 $('.swiper-slide').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+
     $(".data-title").empty();
     $(".data-gifs").empty();
     console.log(this.textContent);
@@ -16,12 +18,13 @@ $('.swiper-slide').click(function(){
     $(".data-title").append(`<p>${searchvalue.charAt(0).toUpperCase()}${searchvalue.slice(1)} Reactions </p>`);
     categoryData(offset, limit, searchvalue);
     console.log(searchvalue);
-    var ss=searchvalue;
+    var ss=searchvalue;    
+    
 });
 
 function categoryData(skip, take, searchvalue) {
     id=3;
-   
+ 
     var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${searchvalue}&api_key=${apikey}&limit=${take}&offset=${skip}`);
     xhr.done(function (response) {
         console.log("categoryData", response);

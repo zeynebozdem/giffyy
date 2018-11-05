@@ -26,6 +26,12 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    border: solid 3px transparent;
+}
+
+.swiper-slide.active{
+    border-color: white;
+
 }
 
 
