@@ -1,0 +1,22 @@
+.searchbar{
+    width: 587px;
+    height: 58px;
+    background-color: #313043;
+    border-radius: 8px;
+    border:none;
+    font-size:24px;
+    color:#4C4B61;
+    padding: 10px;
+  
+}
+.searchbar::placeholder{
+    padding: 10px;
+    font-size:24px;
+    color:#4C4B61;
+}
+.searchbar:focus{
+    background-color: #E4E4E4;
+    font-size:24px;
+    color:#4C4B61;
+    padding: 20px;
+}

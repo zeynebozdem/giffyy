@@ -1,0 +1,14 @@
+.card{
+    border-radius: 0 0 8px 8px;
+
+}
+.card-body{
+    background-color: white;
+    color: #0F0E24;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    padding: 2px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
