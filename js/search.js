@@ -1,39 +1,15 @@
 
 var offset = 0;
 var limit = 20;
-$("#searchbutton").click(function () {
-    $(".datadiv").empty();
-    offset += 20;
-    var searchvalue = $("#searchtext").val();
-    searchData(offset, limit, searchvalue);
-});
 
 
-
-function searchData(skip, take, searchvalue) {
-    id=2;
-    var searchvalue = $(".searchbar").val();
-    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${searchvalue}&api_key=${apikey}&limit=${take}&offset=${skip}`);
-    xhr.done(function (response) {
-        console.log("searchdata", response);
-        var results = response.data
-        $(".data-title").empty();
-        $(".data-title").append(`<p>Explore ${searchvalue.charAt(0).toUpperCase()}${searchvalue.slice(1)} Gifs</p>`);
-
-        for (i in results) {
-            $(".data-gifs").append(`<img src=${results[i].images.fixed_width.url} style='height:200px; width:200px;'/>`);
-        }
-
-    });
-
-}
 $(".searchbar").keyup(function (e) {
     if (e.keyCode == 13) {
         var searchvalue = $(".searchbar").val();
 
         $(".data-gifs").empty();
 
-        searchData(limit, offset, searchvalue);
+        GetData(limit, offset, searchvalue);
 
     }
 });

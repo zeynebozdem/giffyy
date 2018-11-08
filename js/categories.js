@@ -15,28 +15,13 @@ $('.swiper-slide').click(function(){
     console.log(this.textContent);
     offset += 20;
     var searchvalue = this.textContent;
+    $(".searchbar").val(searchvalue);
     $(".data-title").append(`<p>${searchvalue.charAt(0).toUpperCase()}${searchvalue.slice(1)} Reactions </p>`);
-    categoryData(offset, limit, searchvalue);
+    GetData(offset, limit, searchvalue);
     console.log(searchvalue);
-    var ss=searchvalue;    
+   
     
 });
-
-function categoryData(skip, take, searchvalue) {
-    id=3;
- 
-    var xhr = $.get(`http://api.giphy.com/v1/gifs/search?q=${searchvalue}&api_key=${apikey}&limit=${take}&offset=${skip}`);
-    xhr.done(function (response) {
-        console.log("categoryData", response);
-        var results = response.data
-
-        for (i in results) {
-            $(".data-gifs").append(`<img src=${results[i].images.fixed_width.url} style='height:200px; width:200px;'/>`);
-             }
-
-    });
-
-}
 
 
 /* $(".datadiv").empty();
