@@ -24,7 +24,7 @@ function trendingData(skip, take) {
         var array = response.data
         console.log("trending", array);
         for (i = 0; i < array.length; i++) {
-            $(".data-gifs").append(` <div><img src=${array[i].images.fixed_width.url}></div>`);
+            $(".data-gifs").append(` <div><img src=${array[i].images.fixed_width.url} class="gif"></div>`);
         }
 
     });
