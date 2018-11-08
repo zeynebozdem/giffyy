@@ -24,3 +24,17 @@
   .masonry-brick:nth-child(4n+4) {
     width: 380px;
   }
+
+.flex-container-layout{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+
+
+}
+.flex-container-layout > div > img{
+ height: 180px;
+ margin: 4px;
+ border-radius: 16px;
+}
