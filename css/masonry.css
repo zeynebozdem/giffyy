@@ -37,5 +37,41 @@
  height: 180px;
  margin: 5px;
  border-radius: 16px;
+ display: block;
 
 }
+.overlay {
+  margin: 5px;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  
+  opacity: 0;
+  transition: .3s ease;
+  background-color: white;
+  
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+
+ 
+}
+.gif-container {
+  position: relative;
+  width: auto;
+  max-width: 400px;
+}
+.gif-container:hover .overlay {
+  opacity:0.8;
+}
+ .overlay > div > a > img{
+  height:40px;
+  color: white;
+padding: 8px;
+ }

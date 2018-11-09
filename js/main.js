@@ -10,7 +10,7 @@ var xhr = $.get(`http://api.giphy.com/v1/gifs/${method}api_key=${apikey}&limit=$
         var results = response.data
 
         for (i in results) {
-            $(".data-gifs").append(` <div><img src=${results[i].images.fixed_width.url} class="gif"></div>`);
+            $(".data-gifs").append(` <div class="gif-container"><img src=${results[i].images.fixed_width.url}><div class="overlay"><div><a href="#" target="_blank"><img src="assets/clone.svg"></a></div><div><a href="#" target="_blank"><img src="assets/facebook.svg"></a></div><div><a href="#" target="_blank"><img src="assets/twitter.svg"></a></div><div><a href="# target="_blank"><img src="assets/whatsapp.svg"></a></div></div></div>`);
              }
 
     });
