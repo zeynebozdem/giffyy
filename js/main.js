@@ -11,11 +11,12 @@ function GetData(skip, take, searchvalue) {
 
         for (i in results) {
             var gifLink = results[i].bitly_url;
-            $(".data-gifs").append(` <div class="gif-container"><img src=${results[i].images.fixed_width.url}><div class="overlay"><div onclick="copyClipboard('${results[i].bitly_url}')"><a><img src="assets/clone.svg"></a></div><div><a href="https://www.facebook.com/sharer.php?u=${results[i].bitly_url}" target="_blank"><img src="assets/facebook.svg"></a></div><div><a href="https://twitter.com/intent/tweet?url=${results[i].bitly_url}" target="_blank"><img src="assets/twitter.svg"></a></div></div></div>`);
+            $(".data-gifs").append(` <div class="gif-container"><img src=${results[i].images.fixed_width.url}><div class="overlay"><div onclick="copyClipboard('${results[i].bitly_url}')"><a><img src="assets/clone.svg"></a></div><div><a href="https://www.facebook.com/sharer.php?u=${results[i].bitly_url}" target="_blank"><img src="assets/facebook.svg"></a></div><div><a href="https://twitter.com/intent/tweet?url=${results[i].bitly_url}&hashtags=giffy" target="_blank"><img src="assets/twitter.svg"></a></div></div></div>`);
         }
 
     });
 }
+
 
 function copyClipboard(url) {
     var copied = `${url}`;
