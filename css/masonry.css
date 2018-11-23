@@ -36,6 +36,7 @@
 .flex-container-layout > div > img{
  height: 180px;
  margin: 5px;
+ max-width: 300px;
  border-radius: 16px;
  display: block;
 

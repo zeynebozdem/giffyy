@@ -19,8 +19,6 @@ $('.swiper-slide').click(function(){
     $(".data-title").append(`<p>${searchvalue.charAt(0).toUpperCase()}${searchvalue.slice(1)} Reactions </p>`);
     GetData(offset, limit, searchvalue);
     console.log(searchvalue);
-   
-    
 });
 
 
