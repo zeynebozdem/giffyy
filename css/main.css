@@ -9,6 +9,10 @@ body{
 }
 .data-title,.reactionstitle{
     color: white;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 26px;
+}
+.aboutbtn{
+    background-color: #FF3939;
+    color: white;
 }
