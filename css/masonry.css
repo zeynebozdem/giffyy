@@ -34,7 +34,8 @@
 
 }
 .flex-container-layout > div > img{
- height: 180px;
+ height: 300px;
+ width: 300px;
  margin: 5px;
  max-width: 300px;
  border-radius: 16px;

@@ -1,6 +1,3 @@
-
-
-
 $(window).on("scroll", function () {
     var scrollHeight = $(document).height();
     var scrollPosition = $(window).height() + $(window).scrollTop();
@@ -8,6 +5,7 @@ $(window).on("scroll", function () {
         offset += 20;
 
        var searchvalue=$('.searchbar').val();
+       console.log(searchvalue + offset);
        GetData(limit, offset, searchvalue);
     }
 

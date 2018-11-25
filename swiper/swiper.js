@@ -6,11 +6,11 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 10,
     breakpoints: {  
     320: {       
-        slidesPerView: 3,       
+        slidesPerView: 2,       
         spaceBetween: 10     
      },
      480:{
-        slidesPerView: 4,       
+        slidesPerView: 3,       
         spaceBetween: 10 
      },
      640:{

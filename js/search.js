@@ -14,6 +14,13 @@ $(".searchbar").keyup(function (e) {
     }
 });
 
+$(".searchbarbtn").click(function(){
+    var searchvalue = $(".searchbar").val();
+
+    $(".data-gifs").empty();
+
+    GetData(limit, offset, searchvalue);
+});
 
 
 
