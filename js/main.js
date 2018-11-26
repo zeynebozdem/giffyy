@@ -10,12 +10,17 @@ function GetData(skip, take, searchvalue) {
         var results = response.data
 
         for (i in results) {
-            $(".data-gifs").append(`<div class="gif-container"><img src=${results[i].images["480w_still"].url}></div>`);
+            $(".data-gifs").append(`<div class="gif-container"><img src= ${results[i].images["480w_still"].url}></div>`); 
+
         }
     });
 
 
 }
-/**${results[i].images.fixed_width.url} */
+/*style='background:url(${results[i].images["480w_still"].url});' */
+/*style="background:url(${results[i].images["480w_still"].url}); */
+/**${results[i].images.fixed_width.url} 
+ * ${results[i].images["480w_still"].url}
+*/
 
 /**<div class="overlay"><div onclick="copyClipboard('${results[i].bitly_url}')"><a><img src="assets/clone.svg"></a></div><div><a href="https://www.facebook.com/sharer.php?u=${results[i].bitly_url}" target="_blank"><img src="assets/facebook.svg"></a></div><div><a href="https://twitter.com/intent/tweet?url=${results[i].bitly_url}&hashtags=giffy" target="_blank"><img src="assets/twitter.svg"></a></div><div><a href="whatsapp://send?text=${results[i].bitly_url}"><img src="assets/whatsapp.svg"></a></div></div> */
