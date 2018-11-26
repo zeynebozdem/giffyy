@@ -27,8 +27,18 @@
 }
 
 .swiper-slide.active{
-    border-color: white;
-
+    border-color: #FF3939;
+    animation: borderanimate 2s linear;
+}
+@keyframes borderanimate{
+    0%   {border-color:white;}
+    /*50%  {border-color:#FF3939;}*/
+    100%  {border-color:#FF3939;}
+}
+@-webkit-keyframes borderanimate{
+    0%   {border-color:white;}
+   /* 50%  {border-color:#FF3939;}*/
+    100%  {border-color:#FF3939;}
 }
 
 

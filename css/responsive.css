@@ -1,5 +1,5 @@
 @media (min-width:320px)  { 
-    .searchbar{
+    /*.searchbar{
         width: 100%;
         background-color: #313043;
         border-radius: 8px;
@@ -13,7 +13,7 @@
         font-size:24px;
         color:#4C4B61;
         padding: 10px;
-    }
+    }*/
     .logo{
         width: 40%;
      }
@@ -24,7 +24,7 @@
    
  }
 @media (min-width:481px)  { 
-    .searchbar{
+   /* .searchbar{
         width: 100%;
         background-color: #313043;
         border-radius: 8px;
@@ -38,14 +38,14 @@
         font-size:24px;
         color:#4C4B61;
         padding: 10px;
-    }
+    }*/
     .logo{
         width: 40%;
      }
 
 }
 @media (min-width:641px)  { 
-    .searchbar{
+   /* .searchbar{
         width: 50%;
     }
     .searchbar:focus{
@@ -53,12 +53,12 @@
         font-size:24px;
         color:#4C4B61;
         padding: 10px;
-    }
+    }*/
     .logo{
         width: 30%;
      }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
 @media (min-width:961px)  {
-    .searchbar{
+    /*.searchbar{
         width: 50%;
     }
     .searchbar:focus{
@@ -66,12 +66,12 @@
         font-size:24px;
         color:#4C4B61;
         padding: 10px;
-    }
+    }*/
     .logo{
         width: 30%;
      } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width:1025px) {
-    .searchbar{
+   /* .searchbar{
         width: 50%;
     }
     .searchbar:focus{
@@ -79,12 +79,12 @@
         font-size:24px;
         color:#4C4B61;
         padding: 10px;
-    }
+    }*/
     .logo{
         width: 20%;
      } /* big landscape tablets, laptops, and desktops */ }
 @media (min-width:1281px) {
-    .searchbar{
+    /*.searchbar{
         width: 50%;
     }
     .searchbar:focus{
@@ -92,7 +92,7 @@
         font-size:24px;
         color:#4C4B61;
         padding: 10px;
-    }
+    }*/
     .logo{
         width: 20%;
      }
