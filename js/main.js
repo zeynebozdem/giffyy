@@ -10,7 +10,7 @@ function GetData(skip, take, searchvalue) {
         var results = response.data
 
         for (i in results) {
-            $(".data-gifs").append(`<div class="gif-container"><img src= ${results[i].images["480w_still"].url}></div>`); 
+            $(".data-gifs").append(`<div class="gif-container"><img src= ${results[i].images.fixed_height_small.url}></div>`); 
 
         }
     });
