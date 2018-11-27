@@ -14,3 +14,13 @@ body{
     background-color: #FF3939;
     color: white;
 }
+
+kbd a{
+     color: white;
+    text-decoration: none;
+}
+kbd a:hover{
+    opacity: 0.7;
+    color: white;
+text-decoration: none;
+}
