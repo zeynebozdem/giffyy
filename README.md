@@ -13,9 +13,7 @@ This is guvensozmen's ui design and planning, i just coded and commented the des
 
 Giffyy on http://giffyy.surge.sh 
 
-
-![Giffyy on](https://github.com/zeynebozdem/Giffy/tree/master/assets/page.png)
-
+<img src="/assets/page.png" width="1000">
 
 
 
