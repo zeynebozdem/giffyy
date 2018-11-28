@@ -9,7 +9,9 @@ Hello! This is our first project, we hope you like it!
 
 I include the gifs data to my project with xhr ajax request. You can learn xhr method with Jquery. Basicly used the html append with jquery, included infinite scroll by search value. 
 
-This is guvensozmen's ui design and planning, i just coded and commented the design and decided the same design. He is the best ui designer i've ever seen 🖤 his dribble link on https://dribbble.com/guven
+👨🏽‍💻 This is Güven Sözmen's ui design and planning, i just coded and commented the design and decided the same design. He is the best ui designer i've ever seen 🖤 his dribble link on https://dribbble.com/guven
+
+👩🏻‍💻 My codepen link on : https://codepen.io/zeynepozdem/
 
 Giffyy on http://giffyy.surge.sh 
 
