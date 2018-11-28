@@ -7,14 +7,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/card.css" type="text/css">
     <link rel="stylesheet" href="css/masonry.css" type="text/css">
     <link rel="stylesheet" href="swiper/swiper.css" type="text/css">
     <link rel="stylesheet" href="swiper/search.css" type="text/css">
     <link rel="stylesheet" href="css/responsive.css" type="text/css">
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
@@ -27,145 +28,101 @@
 </head>
 
 <body style="background-color: #21202F;">
-
-  <!--  <div class="container">
-        <div class="row">
-            <div class="col col-md-12 text-center pt-4">
-                <img class="logo" onclick="location.reload()" src="assets/GiffyLogo.svg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col col-md-12 text-center mt-4">
-                <input class="searchbar" placeholder="Search" type="text"></input>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col col-md-12 text-left m-3">
-                <p class="swiper-title">Reactions</p>
-            </div>
-        </div>
-
-    </div>-->
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0F0E24;">
-        <a class="navbar-brand ml-2 d-flex d-flex align-items-center" href="#"><img class="logo" src="assets/GiffyLogo.svg" onclick="location.reload()" style="width:100px;">
+        <a class="navbar-brand ml-2 d-flex d-flex align-items-center" href="#">
+            <img class="logo" src="assets/GiffyLogo.svg" onclick="location.reload()" style="width:100px;">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline:none;">
-          <span class="navbar-toggler-icon"><img src="assets/searchIconLight.svg" style="width: 30px; "></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+            aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline:none;">
+            <span class="navbar-toggler-icon">
+                <img src="assets/searchIconLight.svg" style="width: 30px; ">
+            </span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            
-          </ul>
-          <form class="form-inline my-2 my-lg-0 mr-2">
-            <input class="searchbar form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="searchbarbtn btn btn-outline-success my-2 my-sm-0" style="color: white; border-color:white;" type="submit">Search</button>
-          </form>
-          <button type="button" class="btn aboutbtn" data-toggle="modal" data-target="#exampleModalLong">About Us</button>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mr-2">
+                <input class="searchbar form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="searchbarbtn btn btn-outline-success my-2 my-sm-0" style="color: white; border-color:white;" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn aboutbtn" data-toggle="modal" data-target="#exampleModalLong">About Us</button>
 
         </div>
-      </nav>
-      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
+    </nav>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">About Us</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <h5 class="modal-title" id="exampleModalLongTitle">About Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                  <span>Hello! This is our first project, We hope you like it.<br><kbd><a href="https://github.com/zeynebozdem/Giffy" target="_blank">Giffy on Github</a></kbd></span>
-                  <br>
-                  <span><kbd class="designer"><a  href="https://dribbble.com/guven" target="_blank">UI Designer : <kbd>Güven Sözmen</kbd></kbd></a></span>
-                  <br>
-                  <span><kbd class="developer"><a href="https://codepen.io/zeynepozdem/" target="_blank">Frontend Developer : <kbd>Zeynep Özdem</kbd></kbd></a></span>
+                    <span>Hello! This is our first project, We hope you like it.
+                        <br>
+                        <kbd>
+                            <a href="https://github.com/zeynebozdem/Giffy" target="_blank">Giffy on Github</a>
+                        </kbd>
+                    </span>
+                    <br>
+                    <span>
+                        <kbd class="designer">
+                            <a href="https://dribbble.com/guven" target="_blank">UI Designer :
+                                <kbd>Güven Sözmen</kbd>
+                        </kbd>
+                        </a>
+                    </span>
+                    <br>
+                    <span>
+                        <kbd class="developer">
+                            <a href="https://codepen.io/zeynepozdem/" target="_blank">Frontend Developer :
+                                <kbd>Zeynep Özdem</kbd>
+                        </kbd>
+                        </a>
+                    </span>
 
 
                 </div>
                 <div class="modal-footer">
 
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Thank You!</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Thank You!</button>
                 </div>
-              </div>
             </div>
-          </div>
-      <div class="container" style="margin-top: 70px;">
-         <div class="row">
-                    <div class="col col-md-12 text-left m-3 reactionstitle">
-                        <span>Reactions</span>
-                    </div>
-                </div>
-                        <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                  <!--  <div class="swiper-slide trends">
-                                        <div class="flex-container">
-                                            <div class="category-image">
-                                                  <img src="assets/categories/trends.png">
-                                            </div>
-                                            <div class="category-title">
-                                                <p>trends</p>
-                                            </div>
-                                        </div>
-                                    </div>-->
-                                </div>
-                            </div>
-            
-           </div>
-     <div class="container">
-         <div class="row">
-             <div class="col col-md-12 text-left data-title m-3">
-        
-                </div>
-         </div>
-            
+        </div>
+    </div>
+    <div class="container" style="margin-top: 70px;">
+        <div class="row">
+            <div class="col col-md-12 text-left m-3 reactionstitle">
+                <span>Reactions</span>
             </div>
-                <div class="flex-container-layout data-gifs">
-             
-            </div>
-            
-         
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
 
-     </div>
-    <!--
+            </div>
+        </div>
+
+    </div>
     <div class="container">
         <div class="row">
             <div class="col col-md-12 text-left data-title m-3">
 
             </div>
-
         </div>
-    </div>
--->
-    <!--card: 
-        <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://images.unsplash.com/photo-1540206351-84e07c378aa7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c9cd448756cc9364000038cfa1bed13&auto=format&fit=crop&w=2690&q=80" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
 
-    -->
-<!--   <div class="container" style="background-color: #0F0E24;">
-                  <div class="row">
-                      <div class="col-md-12"><img src="assets/rectangle.png"></div>
-                  </div>
-                  <div class="row">
-                        <div class="col-md-6 text-left"><p style="color: white;">Kawaii Overdose with Stupid Love</p></div>
-                        <div class="col-md-6 text-right"><img src="assets/share.png"></div>
-                    </div>
-                 </div>-->
- 
+    </div>
+    <div class="flex-container-layout data-gifs">
+
+    </div>
 
     <script src="js/infinitescroll.js"></script>
-   <script src="js/search.js"></script>
-   <script src="js/main.js"></script>
-   <script src="js/trends.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/trends.js"></script>
     <script src="js/categories.js"></script>
- 
-
     <script src="swiper/swiper.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>

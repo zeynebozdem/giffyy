@@ -1,29 +1,3 @@
-.masonry { 
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: -8px; /* Adjustment for the gutter */
-
-
-  }
-  .masonry-brick {
-    flex: auto;
-    height: 300px;
-    min-width: 150px;
-    margin: 0 8px 8px 0; /* Some gutter */
-
-  }
-  .masonry-brick:nth-child(4n+1) {
-    width: 250px;
-  }
-  .masonry-brick:nth-child(4n+2) {
-    width: 325px;
-  }
-  .masonry-brick:nth-child(4n+3) {
-    width: 180px;
-  }
-  .masonry-brick:nth-child(4n+4) {
-    width: 380px;
-  }
 
 .flex-container-layout{
   display: flex;
@@ -42,28 +16,6 @@
  display: block;
 
 }
-.overlay {
-  margin: 5px;
-  border-radius: 16px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 180px;
-  
-  opacity: 0;
-  transition: .3s ease;
-  background-color: white;
-  
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
-
- 
-}
 .gif-container {
   position: relative;
   width: auto;
@@ -72,8 +24,3 @@
 .gif-container:hover .overlay {
   opacity:0.8;
 }
- .overlay > div > a > img{
-  height:40px;
-  color: white;
-padding: 8px;
- }
