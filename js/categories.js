@@ -20,8 +20,6 @@ $('.swiper-slide').click(function(){
     GetData(offset, limit, searchvalue);
     console.log(searchvalue);
 });
-
-
 /* $(".datadiv").empty();
     offset += 20;
     var searchvalue = $(".swiper-slide p").replace(/ /g,'');
