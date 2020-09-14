@@ -1,21 +1,30 @@
-#  🎉  Giffy   🎊
+  
+## Giffyy  
 
+**Technologies**
 
-Hello! This is our first project, we hope you like it! 
+- [Masonry template](https://github.com/desandro/masonry)
+- [Jquery](https://github.com/jquery/jquery)
+- [Swiper](https://idangero.us/swiper/demos/)
+- [Bootstrap](https://github.com/twbs/bootstrap)
+- Api : [Giphy api](https://developers.giphy.com/docs/)
+- Flexbox
 
-🤡 GIPHY's GIF library is the largest in the world and includes millions of original GIFs directly from the world's best content partners, original GIF artists, as well as the best GIFs from across the entire internet. You can use this api on https://developers.giphy.com/docs/
+**Designer**
+Güven Sözmen [https://dribbble.com/guven](https://dribbble.com/guven)
 
-👻 I also use the swiper library of https://idangero.us/swiper/demos/ . This library is so useful and helps for your flexible swiper design. I use this library with emojies that is giffy's reactions! 
+**Project links**
 
-I include the gifs data to my project with xhr ajax request. You can learn xhr method with Jquery. Basicly used the html append with jquery, included infinite scroll by search value. 
+Check this on github pages https://zeynebozdem.github.io/masonrycubes.github.io/
+Giffyy on http://giffyy.surge.sh
+A Pen created at https://codepen.io/zeynepozdem/pen/LXjVzN
 
-👨🏽‍💻 This is Güven Sözmen's ui design and planning, i just coded and commented the design and decided the same design. He is the best ui designer i've ever seen 🖤 his dribble link on https://dribbble.com/guven
+**Installation and Setup Instructions**
 
-👩🏻‍💻 My codepen link on : https://codepen.io/zeynepozdem/
+Clone down this repository:
 
-Giffyy on http://giffyy.surge.sh 
+    git clone https://github.com/zeynebozdem/giffyy.github.io
+    
+Serve with hot reload at http://127.0.0.1:8080
 
-<img src="/assets/page.png" width="1000">
-
-
-
+    http-server
