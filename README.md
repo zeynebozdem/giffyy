@@ -15,7 +15,7 @@ Güven Sözmen [https://dribbble.com/guven](https://dribbble.com/guven)
 
 **Project links**
 
-Check this on github pages https://zeynebozdem.github.io/masonrycubes.github.io/
+Check this on github pages https://zeynebozdem.github.io/giffyy/
 
 Giffyy on http://giffyy.surge.sh
 
